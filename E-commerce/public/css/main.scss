@@ -1,0 +1,1302 @@
+
+/* Constant */
+$text-header: 50px;
+$transition-all: all .5s;
+/* COLOR */
+$text-white: white !important;
+$text-color-all: #ffba00 !important;
+$bg-gry-all: #e8f0f2 !important;
+$display-block: block !important;
+$display-none: none !important;
+
+.open-list{
+    display: block !important;
+}
+@media screen and (max-width: 991px){
+    .open-list-nav{
+        display: block !important;
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    html{
+        width: fit-content;
+    }
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    //font-family: "Roboto", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-weight: 400;
+    color: #777777;
+    background: $text-white;
+}
+.container-center{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+nav{
+    transform: translate(-50%, 0px);
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 4;
+}
+
+/* nav */
+@media only screen and (min-width: 992px) {
+nav{
+    height: auto;
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    font-family: monospace;
+                    color: black;
+                    transition: $transition-all;
+                }
+                a:hover{
+                    transition: $transition-all;
+                    color:$text-color-all ;
+                }
+                ul{
+                    position: absolute;
+                    display: none !important;
+                    width: 200px;
+                    z-index: 0;
+                    transition: $transition-all;
+                        li{
+                            transition: $transition-all;
+                            color: $text-color-all;
+                            a{
+                                font-size: 14px;
+                                color: $text-color-all ;
+                                transition: $transition-all;
+                                padding: 12px !important;
+                            }
+                        }
+                        li:hover{
+                            background-color: $text-color-all;
+                            color: $text-color-all;
+                                a{
+                                    color: $text-white ;
+                                    transition: $transition-all;
+                                }
+                        }
+                }
+                li:first-child{
+                    margin-top: 20px;
+                }
+            }
+            li:hover{
+                ul{
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+.open{
+    transform: translate(-50%, 150px) !important;
+    transition: all 1s;
+    z-index: 3;
+}
+.input-in{
+    transform: translate(-50%, 80px);
+    transition: all 1s;
+    left: 50%;
+    z-index: 3;
+        form{
+            position: relative;
+            input{
+                background: linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+                color: $text-white;
+                height: 40px;
+            }
+            input:focus{
+                box-shadow: none;
+                color: $text-white;
+                font-weight: 500;
+            }
+            ::placeholder {
+                color: $text-white;
+                font-weight: 500;
+                opacity: 0.8;
+            }
+            span{
+                position: absolute;
+                color: $text-white;
+                cursor: pointer;
+                right: 10px;
+                top: 10px;
+                font-size: 20px;
+                font-weight: 200;
+            }
+        }
+}
+@media only screen and (max-width: 992px) {
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    font-family: monospace;
+                    color: black;
+                    transition: $transition-all;
+                }
+                a:hover{
+                    transition: $transition-all;
+                    color:$text-color-all ;
+                }
+                ul{
+                    display: none !important;
+                    z-index: 0;
+                    transition: $transition-all;
+                        li{
+                            transition: $transition-all;
+                            color: $text-color-all;
+                            a{
+                                font-size: 14px;
+                                color: $text-color-all ;
+                                transition: $transition-all;
+                            }
+                        }
+                        li:hover{
+                            background-color: $text-color-all;
+                                a{
+                                    color: $text-white ;
+                                    transition: $transition-all;
+                                }
+                        }
+                }
+            }
+        }
+    }
+}
+
+/* slide  */
+.bg-img-in{
+    background-image: url("../images/banner/banner-bg.jpg");
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 992px) {
+    .bg-img-in{
+        height: 70vh;
+    }
+}
+
+.carousel-in{
+    width: 100%;
+}
+.center-in{
+    transform: translate(0px, 150px);
+}
+.text-header{
+    font-size: $text-header;
+}
+/* features */
+.card-group{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    .card{
+        img{
+            width: 30px;
+        }
+    }
+}
+/* start category-area */
+.category-area{
+    .row{
+
+            .centered {
+                width: 80%;
+                height: 80%;
+                background-color: #00000073;
+                position: absolute;
+                color : $text-white;
+                top: 50%;
+                left: 50%;
+                transition: $transition-all;
+                transform: translate(-50%, 80%);
+                    h6{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                    }
+            }
+            .show-in:hover .centered{
+                transition: $transition-all;
+                transform: translate(-50%, -50%);
+            }
+        }
+}
+/*###############################################*/
+.popup-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 20px;
+    z-index: 1001;
+}
+.popup-box h3 {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px;
+    color: $text-color-all;
+}
+.popup-box img {
+    max-width: 100%;
+}
+.close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: $text-color-all;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Tahoma;
+    border-radius: 50%;
+}
+
+/*###############################################*/
+/* End category-area */
+/*   single product slide   */
+.product{
+    .card-body{
+        .product-details {
+            a{
+                background-color: #828bb2;
+                color: $text-white;
+            }
+            a:hover{
+                background-color: $text-color-all;
+            }
+        }
+    }
+}
+/*   End single product slide   */
+
+/* Start exclusive deal Area  */
+.exclusive{
+    .row{
+        .bg-img-Left {
+            background-image: linear-gradient(rgba(0, 0, 0, 72%) , rgba(0, 0, 0, .5)),url(../images/exclusive.jpg);
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .details{
+            z-index: 2;
+            color: #f9f9ff;
+            button {
+                z-index: 1;
+                position: relative;
+                font-size: inherit;
+                font-family: inherit;
+                color: white;
+                padding: 0.5em 1em;
+                outline: none;
+                border: none;
+                //background-color: hsl(236, 32%, 26%);
+                background-color: $text-color-all;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            button::after {
+                content: '';
+                z-index: -1;
+                background-color: hsla(0, 0%, 100%, 0.2);
+                position: absolute;
+                top: -50%;
+                bottom: -50%;
+                width: 1.25em;
+                transform: translate3d(-525%, 0, 0) rotate(35deg);
+                transition: transform 0.45s ease-in-out;
+            }
+            button:hover::after {
+                transition: transform 0.45s ease-in-out;
+                transform: translate3d(200%, 0, 0) rotate(35deg);
+            }
+        }
+        .bg-img-Right {
+            height: 600px;
+            background-color: #f9f9ff;
+        }
+        .carousel-inner{
+            .carousel-item{
+                .card{
+                    background-color: transparent !important;
+                    border: none;
+                        .card-body{
+                            a{
+                                background-color: $text-color-all;
+                                color: $text-white;
+                                padding: 10px;
+                            }
+                        }
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 576px) {
+    .exclusive{
+        .row{
+            display: flex;
+            flex-direction: column;
+                .col{
+                    width: 100%;
+                }
+        }
+    }
+}
+
+/* End exclusive deal Area  */
+
+/* Start brand Area  */
+    .brand{
+        .p-3{
+            opacity: 0.2;
+            transition: $transition-all;
+        }
+        .p-3:hover{
+            opacity: 1;
+            transition: $transition-all;
+        }
+    }
+/* End brand Area  */
+
+
+/* Start related-product Area -  */
+.related-product{
+    .row{
+        .col{
+            a{
+                transition: $transition-all;
+            }
+            a:hover{
+                color: $text-color-all;
+                transition: $transition-all;
+            }
+            .max-in{
+                width: 70% !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .related-product{
+        .row{
+            .col{
+                .max-in{
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .related-product{
+        .row{
+            flex-direction: column;
+            .col{
+                justify-content: center;
+                text-align: left;
+            }
+        }
+        .text-center{
+            .row{
+                flex-direction: column;
+                margin: auto;
+            }
+        }
+    }
+}
+/* End related-product Area  */
+/* Start footer-area section_gap */
+.footer{
+    .row{
+        .form{
+            input{
+                padding-left: 20px;
+            }
+            input:focus{
+                border: none ;
+                outline: none ;
+            }
+            .btn{
+                background-color: $text-color-all;
+                color: $text-white;
+            }
+        }
+        .link-secondary{
+            transition: $transition-all;
+        }
+        .link-secondary:hover{
+            transition: $transition-all;
+            color: $text-color-all;
+        }
+    }
+    .footer-bottom p{
+        font-family: fangsong;
+    }
+}
+/* End footer-area section_gap */
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Contact Page ///////////////////////
+// Start Heder //
+.bg-img-contact{
+    background: url("../images/banner/banner-bg.jpg");
+    height: 400px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+    .bg-img-contact{
+        background: linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+        color: $text-white;
+    }
+    .center-in {
+        justify-content: center !important;
+    }
+}
+.center-contact{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.map{
+    .row{
+        .col{
+            .form{
+                input{
+                    border:1.5px solid #f8f9fa;
+                }
+                input:focus{
+                    outline: none;
+                }
+                textarea{
+                    border:1.5px solid #f8f9fa;
+                    resize: none;
+                }
+                textarea:focus{
+                    outline: none !important;
+                }
+            }
+        }
+        button {
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: white;
+            padding: 0.5em 1em;
+            outline: none;
+            border: none;
+            //background-color: hsl(236, 32%, 26%);
+            background-color: $text-color-all;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        button::after {
+            content: '';
+            z-index: -1;
+            background-color: hsla(0, 0%, 100%, 0.2);
+            position: absolute;
+            top: -50%;
+            bottom: -50%;
+            width: 1.25em;
+            transform: translate3d(-525%, 0, 0) rotate(35deg);
+            transition: transform 0.45s ease-in-out;
+        }
+        button:hover::after {
+            transition: transform 0.45s ease-in-out;
+            transform: translate3d(200%, 0, 0) rotate(35deg);
+        }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Login Page ///////////////////////
+// Start Login //
+.Login{
+    .bg-login-left{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.5)), url(../images/login.jpg);
+        height:550px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .row{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        .col{
+            .w-100{
+                p{
+                    font-size: 14px !important;
+                    margin: auto;
+                }
+            }
+            .h-100{
+                background-color: #fcfcfc;
+            }
+            button {
+                z-index: 1;
+                position: relative;
+                font-size: inherit;
+                font-family: inherit;
+                color: white;
+                padding: 0.5em 1em;
+                outline: none;
+                border: none;
+                //background-color: hsl(236, 32%, 26%);
+                background-color: $text-color-all;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            button::after {
+                content: '';
+                z-index: -1;
+                background-color: hsla(0, 0%, 100%, 0.2);
+                position: absolute;
+                top: -50%;
+                bottom: -50%;
+                width: 1.25em;
+                transform: translate3d(-1025%, 0, 0) rotate(35deg);
+                transition: transform 0.45s ease-in-out;
+            }
+            button:hover::after {
+                transition: transform 0.45s ease-in-out;
+                transform: translate3d(350%, 0, 0) rotate(35deg);
+            }
+            .form{
+                input[type=text], input[type=password], input[type=email], input[type=number]{
+                    border: none;
+                    background-color: #fcfcfc;
+                    border-bottom: 1px solid #cccccc;
+                    color: $text-color-all;
+                }
+                input[type=text]:focus, input[type=password]:focus, input[type=email]{
+                    outline: none;
+                }
+                ::placeholder {
+                    color: #868080;
+                    font-family: none;
+                }
+                a{
+                    color: $text-color-all;
+                }
+            }
+        }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Tracking Page ///////////////////////
+// Start Trking //
+.Tracking{
+    p{
+        color: #222222a3;
+    }
+    .form{
+        input[type=text], input[type=password]{
+            border: none;
+            border: 1px solid #cccccc97;
+            color: $text-color-all;
+        }
+        input[type=text]:focus, input[type=password]:focus{
+            outline: none;
+        }
+        ::placeholder {
+            color: #868080;
+            font-family: none;
+        }
+        a{
+            color: $text-color-all;
+        }
+        button {
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: white;
+            padding: 0.5em 1em;
+            outline: none;
+            border: none;
+            //background-color: hsl(236, 32%, 26%);
+            background-color: $text-color-all;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        button::after {
+            content: '';
+            z-index: -1;
+            background-color: hsla(0, 0%, 100%, 0.2);
+            position: absolute;
+            top: -50%;
+            bottom: -50%;
+            width: 1.25em;
+            transform: translate3d(-1025%, 0, 0) rotate(35deg);
+            transition: transform 0.45s ease-in-out;
+        }
+        button:hover::after {
+            transition: transform 0.45s ease-in-out;
+            transform: translate3d(350%, 0, 0) rotate(35deg);
+        }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Blog Page ///////////////////////
+// Start Blog //
+.blog{
+    .blog-hover:hover .centered{
+        transition: $transition-all;
+        background-color: #ffba00b0;
+    }
+    .position-relative{
+        img{
+            max-width: 100%;
+        }
+        .centered{
+            transition: $transition-all;
+            background-color: #00000096;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+                div{
+                    margin: 0 auto;
+                    background-color: white;
+                    height: 0.5px;
+                    width: 70%;
+                }
+        }
+    }
+}
+//////////////////// Start blog Area
+.area{
+    .line{
+        border-bottom: 1px solid #00000024;
+    }
+    .row{
+        .row{
+            .col-12{
+                .hover-text{
+                    a h4{
+                        transition: $transition-all;
+                    }
+                    a:hover h4{
+                        transition: $transition-all;
+                        color: #c5322d !important;
+                    }
+                }
+            }
+            .list{
+                a{
+                    color: black;
+                }
+                .active{
+                    color: $text-color-all;
+                }
+                li{
+                    list-style-type: none !important;
+                        a{
+                            color: #8a8a8a;
+                        }
+                }
+            }
+        }
+        .bg-color{
+            background-color: #fafaff;
+        }
+        .form{
+            input:focus{
+                outline: none;
+            }
+            ::placeholder{
+                color: white;
+            }
+            ul{
+                li{
+                    a{
+                        transition: $transition-all;
+                    }
+                    a:hover{
+                        transition: $transition-all;
+                        color: #c5322d !important;
+                    }
+                }
+            }
+        }
+        .Popular_Post h5, .Post_Catgories h5, .Newsletter h5, .Tag-Clouds h5{
+            margin: auto;
+            background-color: $text-color-all;
+
+        }
+        .Popular{
+            .post{
+                a{
+                    transition: $transition-all;
+                    cursor: pointer;
+                }
+                a:hover{
+                    transition: $transition-all;
+                    color: $text-color-all;
+                }
+            }
+        }
+        .Post_Catgories{
+            ul{
+                li{
+                    list-style-type: none;
+                    transition: all .5s;
+                    border-bottom: 1.5px dotted #777;
+                }
+                li p{
+                    transition: $transition-all;
+                    color: #777;
+                }
+                li:hover p{
+                    transition: $transition-all;
+                    color: $text-color-all;
+                }
+                li:hover{
+                    transition: all .5s;
+                    list-style-type: none;
+                    border-bottom: 1.5px dotted $text-color-all;
+                }
+            }
+        }
+        .Newsletter{
+            .input-group{
+                .index {
+                    margin: 11px;
+                }
+                input:focus{
+                    outline: none !important;
+                }
+                button:focus{
+                    outline: none !important;
+                }
+            }
+        }
+        .Tag-Clouds{
+            .nav{
+                li{
+                    cursor: pointer;
+                    transition: $transition-all;
+                }
+                li:hover{
+                    transition: $transition-all;
+                    background-color: $text-color-all;
+                    color: $text-white;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .area{
+        .container{
+            .row{
+                flex-direction: column;
+
+                .row{
+                    padding-left: 50px !important;
+                    padding-right: 50px !important;
+                    padding: 0;
+                }
+
+            }
+        }
+    }
+}
+.pagination-in{
+    .pagination{
+                li {
+                    a{
+                        border: none;
+                        color: $text-color-all;
+                    }
+                    a:hover{
+                        background-color: $text-color-all;
+                        color: $text-white;
+                    }
+                    .active{
+                        color: $text-white;
+                        background-color: $text-color-all;
+                    }
+
+                }
+        }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// confirmation Page ///////////////////////
+// Start confirmation //
+.order{
+    .title_confirmation{
+        color: #28d500;
+    }
+    .row{
+        h5{
+            color: black;
+        }
+        .list{
+            tr td{
+                color: #222222;
+                    a{
+                        text-decoration: none;
+                        color: #777777;
+                    }
+                }
+            }
+        }
+}
+.order_details {
+    .container{
+        background-color:#e5ecee;
+            .table-des{
+                color: #777777;
+                span{
+                    color: #222222;
+                }
+            }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Shopping Cart Page ///////////////////////
+// Start Shopping Cart //
+.car{
+    .table{
+        vertical-align: middle;
+        color: #777777;
+        span{
+            color: #222222;
+        }
+        .count{
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                appearance: none;
+                margin: 0;
+            }
+        }
+    }
+    .LinkCar {
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: $bg-gry-all;
+        }
+        .primary-btn{
+            background-color: $text-color-all;
+        }
+        input{
+            border: 1px solid $bg-gry-all;
+        }
+        input:focus{
+            outline: none;
+        }
+        .primary-btn {
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: white;
+            padding: 0.5em 1em;
+            outline: none;
+            border: none;
+            //background-color: hsl(236, 32%, 26%);
+            background-color: $text-color-all;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .primary-btn::after {
+            content: '';
+            z-index: -1;
+            background-color: hsla(0, 0%, 100%, 0.2);
+            position: absolute;
+            top: -50%;
+            bottom: -50%;
+            width: 1.25em;
+            transform: translate3d(-1025%, 0, 0) rotate(35deg);
+            transition: transform 0.45s ease-in-out;
+        }
+        .primary-btn:hover::after {
+            transition: transform 0.45s ease-in-out;
+            transform: translate3d(350%, 0, 0) rotate(35deg);
+        }
+    }
+    .Shipping{
+        .Checks{
+            .form-check{
+                input {
+                    border: 1px solid $text-color-all;
+                }
+            }
+        }
+    }
+    .Calculate_Shipping{
+        .option{
+            select{
+                option{
+                    color: #777777;
+                }
+            }
+        }
+    }
+
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// checkout  Page ///////////////////////
+// Start checkout  //
+.checkout{
+    .head{
+        background-color: $bg-gry-all;
+    }
+    button{
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: white;
+        padding: 0.5em 1em;
+        outline: none;
+        border: none;
+        color: $text-white;
+        //background-color: hsl(236, 32%, 26%);
+        background-color: $text-color-all;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    button::after{
+        content: '';
+        z-index: -1;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        width: 1.25em;
+        transform: translate3d(-1025%, 0, 0) rotate(35deg);
+        transition: transform 0.45s ease-in-out;
+    }
+    button:hover::after{
+        transition: transform .7s ease-in-out;
+        transform: translate3d(350%, 0, 0) rotate(35deg);
+    }
+}
+.checkout, .billing, .Product .btn, .btn-buttom, .section, .car{
+    button{
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: white;
+        padding: 0.5em 1em;
+        outline: none;
+        border: none;
+        color: $text-white;
+        //background-color: hsl(236, 32%, 26%);
+        background-color: $text-color-all;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    button::after{
+        content: '';
+        z-index: -1;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        width: 1.25em;
+        transform: translate3d(-1025%, 0, 0) rotate(35deg);
+        transition: transform 0.45s ease-in-out;
+    }
+    button:hover::after{
+        transition: transform .7s ease-in-out;
+        transform: translate3d(350%, 0, 0) rotate(35deg);
+    }
+}
+.billing{
+    .row{
+        .bg-billing-right{
+            background-color: #e5ecee;
+        }
+        form{
+            input{
+                color: #777777;
+            }
+            input::placeholder {
+                color: #777777;
+                font-weight: 300;
+                opacity: 1;
+            }
+            .form-select{
+                color: #777777;
+            }
+            select option {
+                margin: 40px;
+                background: #f6f6f6;
+                color: #777777;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            }
+            textarea{
+                color: #777777;
+                resize: none;
+            }
+            textarea:focus{
+                outline: none;
+            }
+        }
+        .list{
+            li{
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #777777;
+                    }
+                    span:first-child{
+                        color: black !important;
+                    }
+                    span{
+                        cursor: pointer;
+                    }
+            }
+        }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// Product details Page ///////////////////////
+// Start Product details  //
+.Product{
+    .row{
+        .list{
+            li{
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #777777;
+                    }
+                    span:first-child{
+                        color: black !important;
+                    }
+                    span{
+                        cursor: pointer;
+                    }
+            }
+        }
+        .btn{
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                appearance: none;
+                margin: 0;
+            }
+            input{
+                height: 40px;
+            }
+        }
+        .incon{
+            a{
+                background-color: #828bb2;
+                color: $text-white;
+                font-size: 17px;
+                transition: $transition-all;
+            }
+            a:hover{
+                background-color: $text-color-all;
+                transition: $transition-all;
+            }
+        }
+    }
+    .tabs{
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        ul{
+            background-color: $bg-gry-all;
+                li{
+                    margin-right: 10px;
+                    button{
+                        background-color: $text-white;
+                        color: black;
+                    }
+                    .active{
+                        background-color: $text-color-all;
+                    }
+                }
+        }
+        .btn-reply{
+            button{
+                background-color: $text-white;
+                transition: $transition-all;
+            }
+            button:hover{
+                background-color: $text-color-all;
+                transition: $transition-all;
+            }
+        }
+        .section{
+            input{
+                border: 1px solid #ccc;
+                color: #777777;
+            }
+            input:focus, textarea:focus{
+                outline: none;
+            }
+            textarea{
+                border: 1px solid #ccc;
+                resize: none;
+                height: 100px;
+                color: #777777;
+            }
+        }
+        .right{
+            font-size: 13px;
+        }
+        .left{
+            background-color: $bg-gry-all;
+        }
+    }
+}
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/*#################################################################################################################################################*/
+/////////////////////// category Page ///////////////////////
+// Start category  //
+.related{
+    .row{
+        .common-filter{
+            input{
+                border: 1px solid $text-color-all;
+                outline: $text-color-all;
+            }
+        }
+        .bg-related{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+            h6{
+                background-color: #828bb3;
+                color: $text-white;
+            }
+        }
+        .bg-right{
+            height: 50px;
+            background-color: #828bb3;
+            padding: 13px;
+        }
+        .list{
+            padding: 0;
+            a{
+                color: black !important;
+                text-decoration: none;
+            }
+            .active{
+                color: $text-color-all;
+            }
+            li{
+                border-bottom: 1px solid rgba(210, 207, 207, 0.866);
+                padding: 10px;
+                list-style-type: none !important;
+                    a{
+                        color: #8a8a8a;
+                        transition: $transition-all;
+                    }
+                    ul{
+                        li{
+                            list-style-type: none;
+                        }
+                        li:last-child {
+                            border-bottom: none;
+                        }
+                    }
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+            li{
+                    a:hover{
+                        color: $text-color-all;
+                        transition: $transition-all;
+                    }
+            }
+        }
+    }
+}
