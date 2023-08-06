@@ -1,0 +1,32 @@
+/* Left Sidebar */
+.Add-product .leftbar {
+    position: sticky;
+    top: 20px;
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Add-product .leftbar .links {
+    margin-top: 20px;
+  }
+  
+  .Add-product .leftbar a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .Add-product .leftbar a:hover {
+    background-color: #0088cc;
+    color: #fff;
+  }
+  

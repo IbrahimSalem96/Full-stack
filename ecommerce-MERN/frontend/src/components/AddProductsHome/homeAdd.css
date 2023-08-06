@@ -1,0 +1,43 @@
+/* Add-product container */
+.Add-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+/* Content Section */
+.Add-product .content {
+    flex: 2;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .Add-product {
+        margin: 10px;
+    }
+
+    .Add-product .leftbar {
+        position: static;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        background-color: transparent;
+    }
+
+    .Add-product .leftbar .links {
+        margin-top: 10px;
+    }
+
+    .Add-product .leftbar a {
+        margin: 5px 0;
+    }
+}

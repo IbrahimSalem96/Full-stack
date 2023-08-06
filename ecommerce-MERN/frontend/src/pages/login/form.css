@@ -1,0 +1,10 @@
+.form form .validation-form {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgb(251, 17, 17) !important;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    width: 300px;
+}

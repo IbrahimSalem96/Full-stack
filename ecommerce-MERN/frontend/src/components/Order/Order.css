@@ -1,0 +1,13 @@
+#order-container{
+    margin-top: 4.5rem;
+    
+
+
+}
+@media (max-width: 540px){
+        #order-container{
+            width:auto;
+        
+    }
+
+}
