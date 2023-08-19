@@ -1,0 +1,109 @@
+.show-subtask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.show-subtask .title-close {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.show-subtask .title-close i {
+    cursor: pointer;
+}
+
+.show-subtask .Modal {
+    padding: 4rem 2rem;
+    width: 50rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroundPrimary);
+    border-radius: 2rem;
+}
+
+.show-subtask .Modal .title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+}
+
+.show-subtask .Modal .proposition p {
+    color: var(--textSecondary);
+}
+
+.show-subtask .Modal .subtask {
+    margin-top: 3rem;
+    font-weight: var(--fontWeight);
+}
+
+.show-subtask .Modal .center-subtask {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+.show-subtask .Modal .center-subtask .inline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--backgroundSecondary);
+    padding: 1rem 2rem;
+}
+
+.show-subtask .Modal .center-subtask .inline input {
+    width: 2rem;
+    height: 2rem;
+    accent-color: var(--textSecondaryVariant);
+}
+
+.show-subtask .Modal .center-subtask .inline input[type='checkbox']:checked+p {
+    text-decoration: line-through;
+    color: var(--textSecondary);
+}
+
+
+.show-subtask .Modal .control-from {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-subtask .Modal .control-from label {
+    margin-bottom: .5rem;
+    font-weight: var(--fontWeight);
+}
+
+.show-subtask .Modal .control-from select {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--backgroundSecondary);
+    color: var(--textSecondary);
+}
+
+.show-subtask .Modal .control-from span {
+    font-size: 1rem;
+}
+
+.show-subtask .Modal .change-column button {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 20rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+    background-color: var(--textSecondaryVariant);
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+header {
+    background-color: var(--backgroundPrimary);
+    height: 7rem;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 0 3rem;
+}
+
+.w-section-header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    align-items: center;
+    width: 1200px !important;
+    justify-content: space-between;
+}
+
+header .btn {
+    display: flex;
+    align-items: center;
+}
+
+header .btn button {
+    padding: 1.2rem 3rem;
+    border-radius: 50rem;
+    background-color: var(--textSecondaryVariant);
+    color: var(--textPrimary);
+    font-weight: var(--fontWeight);
+    margin-right: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+header .btn i {
+    color: var(--textSecondary);
+    cursor: pointer;
+    padding: 2rem;
+}
+
+header .btn .menu .sort {
+    padding: 1rem 3rem 0;
+    position: absolute;
+    width: 15rem;
+    margin: -13px -11rem;
+    background-color: #2c2c38;
+    cursor: pointer;
+}
+
+header .btn .menu .sort.show {
+    display: block;
+}
+
+header .btn .menu .sort.hidden {
+    display: none;
+}
+
+header .btn .menu .sort li {
+    padding: .5rem 0;
+    border-radius: .5rem;
+    list-style-type: none;
+}
+
+header .btn .menu .sort li:hover {
+    background-color: #21212d;
+}

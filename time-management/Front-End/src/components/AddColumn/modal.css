@@ -1,0 +1,105 @@
+.form-addTask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-addTask .titl-close {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.form-addTask .titl-close i {
+    cursor: pointer;
+}
+
+.form-addTask .Modal {
+    padding: 4rem 2rem 0;
+    width: 50rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroundPrimary);
+    border-radius: 2rem;
+}
+
+.form-addTask .Modal .title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+}
+
+.form-addTask .Modal .control-from {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.form-addTask .Modal .control-from label {
+    margin-bottom: 1rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+}
+
+.form-addTask .Modal .control-from input,
+.form-addTask .Modal .control-from select,
+.form-addTask .Modal .control-from textarea {
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: .4rem;
+    border: 1px solid #4c4c5a;
+    outline: none;
+    background-color: var(--backgroundPrimary);
+    color: var(--textPrimary);
+}
+
+.form-addTask .Modal .control-from textarea {
+    min-height: 7rem;
+    padding-top: 1rem;
+    resize: none;
+}
+
+.form-addTask .Modal .control-from .Subtasks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.form-addTask .Modal .control-from .addSubtask {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: 20rem;
+    font-weight: var(--fontWeight);
+    color: var(--textSecondaryVariant);
+    background-color: var(--textPrimary);
+    cursor: pointer;
+}
+
+.form-addTask .Modal .control-from .Subtasks i {
+    color: #858b9b;
+}
+
+.form-addTask .Modal .control-from .Subtasks input {
+    flex: 1;
+}
+
+.form-addTask .Modal .control-from .addTask {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 20rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+    background-color: var(--textSecondaryVariant);
+    cursor: pointer;
+}

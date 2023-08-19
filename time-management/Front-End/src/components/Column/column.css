@@ -1,0 +1,60 @@
+.column {
+    display: flex;
+    gap: 4rem;
+}
+
+.column .col {
+    width: 30rem;
+    cursor: pointer;
+}
+
+.column .title {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--textSecondary);
+    font-weight: var(--fontWeight);
+    letter-spacing: 0.3rem;
+}
+
+.column .title .column-trash {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.column .title .column-trash i {
+    font-size: 1.5rem;
+    transition: all .3s ease;
+}
+
+.column .title .column-trash i:hover {
+    transition: all .3s ease;
+    color: rgb(250, 45, 45);
+}
+
+
+.column .col i {
+    font-size: 1.2rem;
+}
+
+.column .col .content {
+    background-color: var(--backgroundPrimary);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.column .col .content .card,
+.column .col .content .Subtask {
+    font-weight: var(--fontWeight);
+    margin-bottom: 1rem;
+}
+
+.column .col .content .Subtask {
+    color: var(--textSecondary);
+}

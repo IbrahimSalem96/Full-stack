@@ -1,0 +1,63 @@
+.form-deletetask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-deletetask .titl-close {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.form-deletetask .titl-close i {
+    cursor: pointer;
+}
+
+.form-deletetask .Modal {
+    padding: 4rem 2rem 0;
+    width: 50rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroundPrimary);
+    border-radius: 2rem;
+}
+
+.form-deletetask .Modal .title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: var(--fontWeight);
+    color: var(--textPrimary);
+}
+
+.form-deletetask .Modal .control-from {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-deletetask .Modal .control-from button {
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: var(--fontWeight);
+}
+
+.form-deletetask .Modal .control-from .btn-cancal {
+    background-color: var(--textPrimary);
+    color: var(--textSecondaryVariant);
+}
+
+.form-deletetask .Modal .control-from .btn-delete {
+    background-color: var(--textSecondaryVariant);
+    color: white;
+}

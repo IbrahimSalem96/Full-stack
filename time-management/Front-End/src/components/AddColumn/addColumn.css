@@ -1,0 +1,9 @@
+.add-column button {
+    border: none;
+    outline: none;
+    background-color: var(--backgroundPrimary);
+    color: var(--textPrimary);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
